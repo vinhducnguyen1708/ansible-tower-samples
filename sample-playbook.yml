@@ -3,6 +3,7 @@
   gather_facts: True
   tasks:
     - name: Playing Task1
+      debug:
       msg: "Something cool - Duc Vinh"
 
     - name: Find hostname
