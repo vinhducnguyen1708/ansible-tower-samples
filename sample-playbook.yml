@@ -4,7 +4,7 @@
   tasks:
     - name: Playing Task1
       debug:
-      msg: "Something cool - Duc Vinh"
+        msg: "Something cool - Duc Vinh"
 
     - name: Find hostname
       command: cat /etc/hostname
