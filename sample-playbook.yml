@@ -1,0 +1,13 @@
+---
+- hosts: all
+  gather_facts: True
+  tasks:
+    - name: Playing Task1
+      msg: "Something cool - Duc Vinh"
+
+    - name: Find hostname
+      command: cat /etc/hostname
+      register: _hostname
+
+    - name: Show the hostname
+      debug: var=_hostname.stdout
